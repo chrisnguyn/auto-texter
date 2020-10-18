@@ -27,7 +27,7 @@ def send_text(message):
     print('Text sent!')
 
 
-schedule.every().day.at('01:36').do(send_text, random.choice(TEXTS))  # define a scheduled task - func(), *args, **kwargs
+schedule.every().day.at('06:00').do(send_text, random.choice(TEXTS))  # define a scheduled task - func(), *args, **kwargs
 print('Currently running...')
 
 while True:
